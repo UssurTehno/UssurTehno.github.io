@@ -6,3 +6,265 @@ html {
 	font-size: 1em;
 	scroll-behavior: smooth;
 }
+/* 
+			Заголовок
+*/
+header {
+	display: flex;
+	width: 60vw;
+	margin: 0 auto;
+}
+
+figure.logo a {
+	display: block;
+	min-width: 25px;
+	min-height: 25px;
+	width: 3.75vw;
+	height: 3.75vw;
+	margin-bottom: -1.1vw;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(./img/logo.png);
+}
+figure.logo {
+	margin: 0;
+}
+
+header.title-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(255, 255, 255);
+}
+
+.title-header h1 {
+margin: 0;
+font-size: 1.5em;
+line-height: 1.5em;
+}
+
+header.title-header a,
+header.title-header a:visited,
+header.title-header a:hover {
+color: black;
+}
+
+nav.title {
+display: flex;
+align-items: center;
+column-gap: 1em;
+font-size: 1.2em;
+
+}
+nav.title > a {
+text-decoration: none;
+padding: 0 4px;
+padding-bottom: px;
+font-weight: bold;
+border-radius: 5px;
+line-height: 1.5em;
+}
+
+nav.title > a:hover {
+text-decoration:underline;
+}
+/* 
+		Конец заголовока
+*/
+
+/*
+		Тело сайта
+*/
+body {
+	display: flex;
+	flex-direction: column;
+	
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+main {
+	margin: 0 auto;
+	flex: 1;
+}
+
+article {
+	width: 60vw;
+}
+
+section{
+	font-size: 1.5em;
+	color: rgb(63, 63, 63);
+}
+
+section a {
+text-decoration: underline;
+font-weight: 500;
+color: rgb(24, 24, 24);
+}
+section a:hover {
+text-decoration: none;
+}
+/*
+		Конец тела
+*/
+
+/* 
+		"Основная инфа" в index.html
+*/
+section.main-info {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+row-gap: 2em;
+margin-top: 15vh;
+}
+
+.main-info-text {
+width: 8em;
+flex-grow: 1;
+}
+
+.main-info-text h1 {
+/* font-size: 4rem; */
+font-size: 47px;
+margin: 0;
+}
+
+.main-info-text p {
+/* font-size: 3em; */
+font-size: 34px;
+margin: 0;
+color: black;
+}
+
+figure.main-picture {
+margin: 0;
+max-width: 17em;
+flex-grow: 1;
+}
+
+figure.main-picture img {
+width: 100%;
+transition: transform 0.5s 0s ease;
+}
+figure.main-picture img:hover {
+transform: scale(1.1);
+}
+/* 
+		Конец 
+*/
+/*
+			"Последнее добавленное" в index.html
+*/
+section.main-new {
+	padding: 30px 30px 10px 30px;
+	margin-top: 20vh;
+	border-radius: 15px;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+section.main-new h2 {
+	margin: 0;
+	margin-top: -15px;
+
+	font-size: 1.2em;
+	line-height: 1em;
+}
+
+section.main-new h3,
+section.blogs h3 {
+	margin: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+
+	font-size: 1em;
+	line-height: 1em;
+}
+section.main-new h3 a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+section.main-new h3 a:hover {
+	text-decoration: underline;
+}
+
+section.main-new p {
+	margin: 0;
+	
+	color: black;
+	font-size: .75em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	margin: 0;
+}
+/*
+			Конец
+*/
+/* 
+			Футер
+*/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 5vh;
+
+	background-color: rgb(226, 226, 226);
+}
+
+footer h2 {
+	text-align: center;
+	margin: 0 auto;
+	
+}
+footer .social-media {
+	list-style-type: none;
+}
+.social-media li {
+	display: inline-block;
+}
+.social-media {
+	padding: 0;
+}
+
+.telegram {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(./img/tg-logo-100.png);
+}
+.vk {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(./img/vk-logo-100.png);
+}
+.github {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(./img/gh-logo-100.png);
+}
+/* 
+			Конец футера
+*/
