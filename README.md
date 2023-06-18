@@ -1,1 +1,0 @@
-# UssurTehno.github.io
