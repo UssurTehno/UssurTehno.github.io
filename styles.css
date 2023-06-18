@@ -6,6 +6,13 @@ html {
 	font-size: 1em;
 	scroll-behavior: smooth;
 }
+body {
+	display: flex;
+	flex-direction: column;
+	
+	min-height: 100vh;
+	margin: 0 auto;
+}
 /* 
 			Заголовок
 */
@@ -19,14 +26,14 @@ figure.logo a {
 	display: block;
 	min-width: 25px;
 	min-height: 25px;
-	width: 3.75vw;
-	height: 3.75vw;
+	width: 3.5vw;
+	height: 3.5vw;
 	margin-bottom: -1.1vw;
 
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	background-image: url(./img/logo.png);
+	background-image: url(./img/logoshort.png);
 }
 figure.logo {
 	margin: 0;
@@ -92,6 +99,7 @@ main {
 
 article {
 	width: 60vw;
+	min-height: 100vh;
 }
 
 section{
@@ -132,6 +140,7 @@ flex-grow: 1;
 /* font-size: 4rem; */
 font-size: 47px;
 margin: 0;
+text-align: center;
 }
 
 .main-info-text p {
@@ -142,7 +151,7 @@ color: black;
 }
 
 figure.main-picture {
-margin: 0;
+margin: 0 auto;
 max-width: 17em;
 flex-grow: 1;
 }
@@ -161,10 +170,13 @@ transform: scale(1.1);
 			"Последнее добавленное" в index.html
 */
 section.main-new {
-	padding: 30px 30px 10px 30px;
+	padding: 10px;
+	margin: 0 auto;
 	margin-top: 20vh;
 	border-radius: 15px;
 	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	width: 10vw;
+	transition: transform 0.5s 0s ease;
 }
 
 section.main-new h2 {
@@ -175,22 +187,22 @@ section.main-new h2 {
 	line-height: 1em;
 }
 
-section.main-new h3,
-section.blogs h3 {
+section.main-new h3 {
 	margin: 0;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 
 	font-size: 1em;
 	line-height: 1em;
+	text-align: center;
 }
 section.main-new h3 a {
 	color: black;
 	text-decoration: none;
 	font-weight: bold;
 }
-section.main-new h3 a:hover {
-	text-decoration: underline;
+section.main-new:hover {
+	transform: scale(1.1);
 }
 
 section.main-new p {
@@ -207,6 +219,73 @@ section.main-new p {
 /*
 			Конец
 */
+
+/* 
+			Секция "Подробнее"
+*/
+section.main-more {
+	padding-top: 5vw;
+}
+section.main-more p{
+	text-align: center;
+}
+section.main-more span{
+	color: #008DD4;
+}
+section.main-more b{
+	color: #FF181F;
+}
+section.pages {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+	gap: 1em;
+	min-height: 30vh;
+	align-items: center;
+}
+section.pages .page {
+	display: block;
+	min-width: 15vw;
+	max-width: 350px;
+	height: 40vh;
+	/* min-height: 20hv; */
+	
+	
+	padding: 10px;
+	padding: 2vh;
+	margin: 0 auto;
+	margin-top: 20vh;
+	
+	background-color: #ff777c;
+	border: 1px black;
+	border-radius: 15px;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	text-decoration: none;
+	transition: transform 0.5s 0s ease;
+
+	overflow: hidden;
+}
+section.pages .page:hover {
+transform: scale(1.1);
+}
+section.pages .page:first-child {
+	background-color: #439dca;
+}
+section.pages .page:last-child {
+	background-color: #EBEBD3;
+}
+
+.page figure {
+	margin: 0 auto;
+}
+.page figure img {	
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 2em;
+}
+
+
+
+
 /* 
 			Футер
 */
@@ -221,6 +300,8 @@ footer {
 	margin-top: 5vh;
 
 	background-color: rgb(226, 226, 226);
+	color: #58595b;
+	background-color: #262730;
 }
 
 footer h2 {
