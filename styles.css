@@ -170,38 +170,38 @@ transform: scale(1.1);
 			"Последнее добавленное" в index.html
 */
 section.main-new {
-	padding: 10px;
-	margin: 0 auto;
-	margin-top: 20vh;
-	border-radius: 15px;
-	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-	width: 10vw;
-	transition: transform 0.5s 0s ease;
+	display: flex;
+	align-items: center;
+	justify-items: center;
 }
 
-section.main-new h2 {
-	margin: 0;
-	margin-top: -15px;
-
-	font-size: 1.2em;
-	line-height: 1em;
-}
 
 section.main-new h3 {
-	margin: 0;
-	margin-top: 0.5em;
+	margin: 0 auto;
+	transition: transform 0.5s 0s ease;
+	margin-top: 15vh;
+}
+section.main-new h3 a {
+	margin: 0 auto;
+	margin-top: 15vh;
 	margin-bottom: 0.5em;
+	min-width: 10vw;
+	width: 10vw;
+	padding: 1vw;
+
+	border-radius: 15px;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 	font-size: 1em;
 	line-height: 1em;
 	text-align: center;
-}
-section.main-new h3 a {
+	text-decoration: none;
+	
 	color: black;
 	text-decoration: none;
 	font-weight: bold;
 }
-section.main-new:hover {
+section.main-new h3:hover {
 	transform: scale(1.1);
 }
 
