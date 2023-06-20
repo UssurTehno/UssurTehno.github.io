@@ -137,6 +137,7 @@ row-gap: 2em;
 margin-top: 15vh;
 }
 
+
 .main-info-text {
 width: 8em;
 flex-grow: 1;
@@ -147,6 +148,12 @@ flex-grow: 1;
 font-size: 47px;
 margin: 0;
 text-align: center;
+
+}
+@media (max-width:550px) {
+	.main-info-text h1 {
+		font-size: 35px;
+	}
 }
 
 .main-info-text p {
