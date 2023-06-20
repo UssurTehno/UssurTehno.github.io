@@ -20,6 +20,7 @@ header {
 	display: flex;
 	width: 60vw;
 	margin: 0 auto;
+	padding-top: 5px;
 }
 
 figure.logo a {
@@ -28,7 +29,11 @@ figure.logo a {
 	min-height: 25px;
 	width: 3.5vw;
 	height: 3.5vw;
-	margin-bottom: -1.1vw;
+	/* margin-bottom: -1.1vw; */
+	border-radius: 50%;
+	box-shadow: 0px 2px 5px 2px rgba(34, 60, 80, 0.2);
+
+
 
 	background-repeat: no-repeat;
 	background-position: center;
@@ -72,6 +77,7 @@ padding-bottom: 4px;
 font-weight: bold;
 border-radius: 5px;
 line-height: 1.5em;
+word-wrap: break-word;
 }
 
 nav.title > a:hover {
@@ -398,11 +404,11 @@ footer .social-media {
 	
 	
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 
-	width: 30vw;
+	
 
 	padding: 10px;
 	margin: 0 auto;
@@ -411,12 +417,18 @@ footer .social-media {
 	
 	margin-top: 2.5vh;
 }
+@media (max-width:550px) {
+	.map-box {
+		box-shadow: none;
+	}
+}
 
 .map-box .contact-info {
 	
 	background-color: #439dca;
 	padding: 30px;
 	border-radius: 50px;
+	width: 300px;
 }
 
 .map-box .contact-info a {
@@ -431,7 +443,9 @@ footer .social-media {
 	align-items: center;
 	justify-content: center;
 	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
+
 .yamap {
 	display: flex;
 	align-items: center;
@@ -472,8 +486,9 @@ iframe {
 	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 	text-decoration: none;
 	transition: transform 0.5s 0s ease;
+	width: 30vw;
 
-	overflow: hidden;
+	/* overflow: hidden; */
 	flex-basis:45%
 }
 .service-box:hover {
@@ -484,6 +499,11 @@ transform: scale(1.1);
 }
 #blue {
 	background-color: #439dca;
+}
+
+.service-box h2 {
+	font-size: 2.5vw; 
+	overflow-wrap: anywhere;
 }
 
 /* 
